@@ -1,4 +1,17 @@
 [
+    {
+    "id": 234,
+    "slug": "234-normalized-prime-gaps",
+    "title": "Normalized prime gaps",
+    "display_title": "The Distribution of Normalized Prime Gaps",
+    "status": "Open",
+    "area": ["number theory", "primes"],
+    "source": "https://www.erdosproblems.com/234",
+    "statement": "For every \\(c\\geq 0\\) the density \\(f(c)\\) of integers for which \\(\\frac{p_{n+1}-p_n}{\\log n}< c\\) exists and is a continuous function of \\(c\\).",
+    "problemPage": "problems/234-normalized-prime-gaps.md",
+    "posterFolder": "posters/234-normalized-prime-gaps",
+    "posterImage": "posters/234-normalized-prime-gaps/poster.png"
+  },
   {
     "id": 242,
     "slug": "242-erdos-straus",
