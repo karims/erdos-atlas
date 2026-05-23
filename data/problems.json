@@ -1,0 +1,28 @@
+[
+  {
+    "id": 242,
+    "slug": "242-erdos-straus",
+    "title": "Erdős–Straus conjecture",
+    "display_title": "Three Unit Shadows",
+    "status": "Open",
+    "area": ["number theory", "diophantine equations", "egyptian fractions"],
+    "source": "https://www.erdosproblems.com/latex/242",
+    "statement": "For every \\(n>2\\) there exist distinct integers \\(1\\leq x<y<z\\) such that \\(\\frac{4}{n}=\\frac{1}{x}+\\frac{1}{y}+\\frac{1}{z}\\).",
+    "problemPage": "problems/242-erdos-straus.md",
+    "posterFolder": "posters/242-erdos-straus",
+    "posterImage": "posters/242-erdos-straus/poster.png"
+  },
+  {
+    "id": 1186,
+    "slug": "1186-monochromatic-progressions",
+    "title": "Monochromatic progressions in 2-colourings",
+    "display_title": "Monochromatic Progressions",
+    "status": "Open",
+    "area": ["additive combinatorics", "arithmetic progressions", "Ramsey theory"],
+    "source": "https://www.erdosproblems.com/1186",
+    "statement": "Let \\(\\delta_k\\) be such that in any \\(2\\)-colouring of \\(\\{1,\\ldots,n\\}\\) there exist at least \\((\\delta_k+o(1))n^2\\) many monochromatic \\(k\\)-term arithmetic progressions. Give reasonable bounds (or even an asymptotic formula) for \\(\\delta_k\\).",
+    "problemPage": "problems/1186-monochromatic-progressions.md",
+    "posterFolder": "posters/1186-monochromatic-progressions",
+    "posterImage": "posters/1186-monochromatic-progressions/poster.png"
+  }
+]

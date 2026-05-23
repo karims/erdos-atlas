@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Erdős Atlas</title>
+  <meta
+    name="description"
+    content="A visual gallery of picturesque posters for Erdős problems, conjectures, and mathematical mysteries."
+  />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- MathJax configuration -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [["\\(", "\\)"]],
+        displayMath: [["\\[", "\\]"]]
+      },
+      svg: {
+        fontCache: "global"
+      },
+      startup: {
+        typeset: false
+      }
+    };
+  </script>
+
+  <!-- MathJax library -->
+  <script
+    id="MathJax-script"
+    defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  </script>
+</head>
+
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">A visual archive of mathematical mysteries</p>
+
+      <h1>Erdős Atlas</h1>
+
+      <p class="subtitle">
+        Picturesque posters for Erdős problems, conjectures, and beautiful open questions.
+      </p>
+    </header>
+
+    <section class="gallery" id="gallery">
+      <p class="loading">Loading posters...</p>
+    </section>
+  </main>
+
+  <script>
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function renderProblemCard(problem) {
+      const id = escapeHtml(problem.id);
+      const title = escapeHtml(problem.title);
+      const displayTitle = escapeHtml(problem.display_title || problem.title);
+      const posterImage = escapeHtml(problem.posterImage);
+      const problemPage = escapeHtml(problem.problemPage);
+      const posterFolder = escapeHtml(problem.posterFolder);
+      const source = escapeHtml(problem.source);
+
+      const areas = Array.isArray(problem.area)
+        ? problem.area.map(escapeHtml).join(" · ")
+        : escapeHtml(problem.area || "");
+
+      /*
+        Do NOT escape problem.statement here.
+        It intentionally contains MathJax delimiters like \( ... \).
+        Since this is your own local JSON file, this is acceptable for this small static site.
+      */
+      const statement = escapeHtml(problem.statement || "");
+
+      return `
+        <article class="poster-card">
+          <a href="${posterImage}" aria-label="Open poster for Erdős Problem #${id}">
+            <img
+              src="${posterImage}"
+              alt="Poster for Erdős Problem #${id}: ${title}"
+              loading="lazy"
+            />
+          </a>
+
+          <div class="poster-info">
+            <p class="problem-id">Erdős Problem #${id}</p>
+
+            <h2>${displayTitle}</h2>
+
+            <p class="problem-name">${title}</p>
+
+            <p class="area">${areas}</p>
+
+            <p class="statement">
+              ${statement}
+            </p>
+
+            <div class="links">
+              <a href="${problemPage}">Problem notes</a>
+              <a href="${posterFolder}/source.md">Source notes</a>
+              <a href="${source}">Original source</a>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    async function waitForMathJax() {
+      const maxAttempts = 80;
+
+      for (let attempt = 0; attempt < maxAttempts; attempt += 1) {
+        if (
+          window.MathJax &&
+          window.MathJax.startup &&
+          window.MathJax.startup.promise &&
+          typeof window.MathJax.typesetPromise === "function"
+        ) {
+          await window.MathJax.startup.promise;
+          return;
+        }
+
+        await new Promise((resolve) => setTimeout(resolve, 50));
+      }
+
+      console.warn("MathJax did not become ready in time.");
+    }
+
+    async function renderMath(container) {
+      await waitForMathJax();
+
+      if (typeof window.MathJax?.typesetClear === "function") {
+        window.MathJax.typesetClear([container]);
+      }
+
+      if (typeof window.MathJax?.typesetPromise === "function") {
+        await window.MathJax.typesetPromise([container]);
+      }
+    }
+
+    async function loadGallery() {
+      const gallery = document.getElementById("gallery");
+
+      if (!gallery) {
+        console.error("Gallery element not found. Expected #gallery.");
+        return;
+      }
+
+      try {
+        const response = await fetch("data/problems.json", {
+          cache: "no-store"
+        });
+
+        if (!response.ok) {
+          throw new Error(`Failed to load data/problems.json: ${response.status}`);
+        }
+
+        const problems = await response.json();
+
+        if (!Array.isArray(problems)) {
+          throw new Error("data/problems.json must contain a JSON array.");
+        }
+
+        gallery.innerHTML = problems.map(renderProblemCard).join("");
+
+        await renderMath(gallery);
+      } catch (error) {
+        console.error(error);
+
+        gallery.innerHTML = `
+          <p class="error">
+            Could not load gallery data. Check <code>data/problems.json</code>.
+          </p>
+        `;
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", loadGallery);
+  </script>
+</body>
+</html>
