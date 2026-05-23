@@ -1,4 +1,17 @@
 [
+      {
+      "id": 366,
+      "slug": "366-full-neighbours",
+      "title": "Full neighbours",
+      "display_title": "Full Neighbours",
+      "status": "Open",
+      "area": ["number theory", "powerful numbers"],
+      "source": "https://www.erdosproblems.com/366",
+      "statement": "Are there any \\(2\\)-full \\(n\\) such that \\(n+1\\) is \\(3\\)-full? That is, if \\(p\\mid n\\) then \\(p^2\\mid n\\) and if \\(p\\mid n+1\\) then \\(p^3\\mid n+1\\).",
+      "problemPage": "problems/366-full-neighbours.md",
+      "posterFolder": "posters/366-full-neighbours",
+      "posterImage": "posters/366-full-neighbours/poster.png"
+    },
     {
     "id": 234,
     "slug": "234-normalized-prime-gaps",
