@@ -1,93 +1,158 @@
 [
-        {
-          "id": 810,
-          "slug": "810-rainbow-four-cycles",
-          "title": "Rainbow four-cycles",
-          "display_title": "Rainbow Four-Cycles",
-          "status": "Open",
-          "area": ["graph theory", "Ramsey theory"],
-          "source": "https://www.erdosproblems.com/810",
-          "statement": "Does there exist some \\(\\epsilon>0\\) such that, for all sufficiently large \\(n\\), there exists a graph \\(G\\) on \\(n\\) vertices with at least \\(\\epsilon n^2\\) many edges such that the edges can be coloured with \\(n\\) colours so that every \\(C_4\\) receives \\(4\\) distinct colours?",
-          "problemPage": "problems/810-rainbow-four-cycles.md",
-          "posterFolder": "posters/810-rainbow-four-cycles",
-          "posterImage": "posters/810-rainbow-four-cycles/poster.png"
-        },
-        {
-          "id": 1142,
-          "slug": "1142-prime-after-powers-of-two",
-          "title": "Prime after powers of two",
-          "display_title": "Prime Shadows of Powers",
-          "status": "Open",
-          "area": ["number theory", "primes"],
-          "source": "https://www.erdosproblems.com/1142",
-          "statement": "Are there infinitely many \\(n\\), or any \\(n>105\\), such that \\(n-2^k\\) is prime for all \\(1<2^k<n\\)?",
-          "problemPage": "problems/1142-prime-after-powers-of-two.md",
-          "posterFolder": "posters/1142-prime-after-powers-of-two",
-          "posterImage": "posters/1142-prime-after-powers-of-two/poster.png"
-        },
-        {
-          "id": 530,
-          "slug": "530-sidon-subsets",
-          "title": "Sidon subsets",
-          "display_title": "Sidon Subsets",
-          "status": "Open",
-          "area": ["number theory", "Sidon sets"],
-          "source": "https://www.erdosproblems.com/530",
-          "statement": "Let \\(\\ell(N)\\) be maximal such that in any finite set \\(A\\subset \\mathbb{R}\\) of size \\(N\\) there exists a Sidon subset \\(S\\) of size \\(\\ell(N)\\), i.e. the only solutions to \\(a+b=c+d\\) in \\(S\\) are the trivial ones. Determine the order of \\(\\ell(N)\\). In particular, is it true that \\(\\ell(N)\\sim N^{1/2}\\)?",
-          "problemPage": "problems/530-sidon-subsets.md",
-          "posterFolder": "posters/530-sidon-subsets",
-          "posterImage": "posters/530-sidon-subsets/poster.png"
-        },
-        {
-          "id": 366,
-          "slug": "366-full-neighbours",
-          "title": "Full neighbours",
-          "display_title": "Full Neighbours",
-          "status": "Open",
-          "area": ["number theory", "powerful numbers"],
-          "source": "https://www.erdosproblems.com/366",
-          "statement": "Are there any \\(2\\)-full \\(n\\) such that \\(n+1\\) is \\(3\\)-full? That is, if \\(p\\mid n\\) then \\(p^2\\mid n\\) and if \\(p\\mid n+1\\) then \\(p^3\\mid n+1\\).",
-          "problemPage": "problems/366-full-neighbours.md",
-          "posterFolder": "posters/366-full-neighbours",
-          "posterImage": "posters/366-full-neighbours/poster.png"
-        },
-        {
-          "id": 234,
-          "slug": "234-normalized-prime-gaps",
-          "title": "Normalized prime gaps",
-          "display_title": "The Distribution of Normalized Prime Gaps",
-          "status": "Open",
-          "area": ["number theory", "primes"],
-          "source": "https://www.erdosproblems.com/234",
-          "statement": "For every \\(c\\geq 0\\) the density \\(f(c)\\) of integers for which \\(\\frac{p_{n+1}-p_n}{\\log n}< c\\) exists and is a continuous function of \\(c\\).",
-          "problemPage": "problems/234-normalized-prime-gaps.md",
-          "posterFolder": "posters/234-normalized-prime-gaps",
-          "posterImage": "posters/234-normalized-prime-gaps/poster.png"
-        },
-        {   
-          "id": 242,
-          "slug": "242-erdos-straus",
-          "title": "Erdős–Straus conjecture",
-          "display_title": "Three Unit Shadows",
-          "status": "Open",
-          "area": ["number theory", "diophantine equations", "egyptian fractions"],
-          "source": "https://www.erdosproblems.com/latex/242",
-          "statement": "For every \\(n>2\\) there exist distinct integers \\(1\\leq x<y<z\\) such that \\(\\frac{4}{n}=\\frac{1}{x}+\\frac{1}{y}+\\frac{1}{z}\\).",
-          "problemPage": "problems/242-erdos-straus.md",
-          "posterFolder": "posters/242-erdos-straus",
-          "posterImage": "posters/242-erdos-straus/poster.png"
-        },
-        {
-          "id": 1186,
-          "slug": "1186-monochromatic-progressions",
-          "title": "Monochromatic progressions in 2-colourings",
-          "display_title": "Monochromatic Progressions",
-          "status": "Open",
-          "area": ["additive combinatorics", "arithmetic progressions", "Ramsey theory"],
-          "source": "https://www.erdosproblems.com/1186",
-          "statement": "Let \\(\\delta_k\\) be such that in any \\(2\\)-colouring of \\(\\{1,\\ldots,n\\}\\) there exist at least \\((\\delta_k+o(1))n^2\\) many monochromatic \\(k\\)-term arithmetic progressions. Give reasonable bounds (or even an asymptotic formula) for \\(\\delta_k\\).",
-          "problemPage": "problems/1186-monochromatic-progressions.md",
-          "posterFolder": "posters/1186-monochromatic-progressions",
-          "posterImage": "posters/1186-monochromatic-progressions/poster.png"
-        }
+  {
+    "id": 169,
+    "slug": "169-progression-free-reciprocal-sums",
+    "title": "Progression-free reciprocal sums",
+    "display_title": "Forbidden Progressions, Heavy Sums",
+    "status": "Open",
+    "area": ["additive combinatorics", "arithmetic progressions"],
+    "source": "https://www.erdosproblems.com/169",
+    "statement": "Let \\(k\\geq 3\\) and \\(f(k)\\) be the supremum of \\(\\sum_{n\\in A}\\frac{1}{n}\\) as \\(A\\) ranges over all sets of positive integers which do not contain a \\(k\\)-term arithmetic progression. Estimate \\(f(k)\\). Is \\(\\lim_{k\\to\\infty}\\frac{f(k)}{\\log W(k)}=\\infty\\), where \\(W(k)\\) is the van der Waerden number?",
+    "problemPage": "problems/169-progression-free-reciprocal-sums.md",
+    "posterFolder": "posters/169-progression-free-reciprocal-sums",
+    "posterImage": "posters/169-progression-free-reciprocal-sums/poster.png"
+  },
+  {
+    "id": 165,
+    "slug": "165-ramsey-r3k",
+    "title": "The Ramsey number R(3,k)",
+    "display_title": "The Triangle–Independence Threshold",
+    "status": "Open",
+    "area": ["graph theory", "Ramsey theory"],
+    "source": "https://www.erdosproblems.com/165",
+    "statement": "Give an asymptotic formula for \\(R(3,k)\\).",
+    "problemPage": "problems/165-ramsey-r3k.md",
+    "posterFolder": "posters/165-ramsey-r3k",
+    "posterImage": "posters/165-ramsey-r3k/poster.png"
+  },
+  {
+    "id": 428,
+    "slug": "428-prime-translates",
+    "title": "Prime translates",
+    "display_title": "Prime Translates",
+    "status": "Open",
+    "area": [
+      "number theory",
+      "primes"
+    ],
+    "source": "https://www.erdosproblems.com/428",
+    "statement": "Is there a set \\(A\\subseteq \\mathbb{N}\\) such that, for infinitely many \\(n\\), all of \\(n-a\\) are prime for all \\(a\\in A\\) with \\(0<a<n\\) and \\(\\liminf_{x\\to\\infty}\\frac{|A\\cap[1,x]|}{\\pi(x)}>0\\)?",
+    "problemPage": "problems/428-prime-translates.md",
+    "posterFolder": "posters/428-prime-translates",
+    "posterImage": "posters/428-prime-translates/poster.png"
+  },
+  {
+    "id": 810,
+    "slug": "810-rainbow-four-cycles",
+    "title": "Rainbow four-cycles",
+    "display_title": "Rainbow Four-Cycles",
+    "status": "Open",
+    "area": [
+      "graph theory",
+      "Ramsey theory"
+    ],
+    "source": "https://www.erdosproblems.com/810",
+    "statement": "Does there exist some \\(\\epsilon>0\\) such that, for all sufficiently large \\(n\\), there exists a graph \\(G\\) on \\(n\\) vertices with at least \\(\\epsilon n^2\\) many edges such that the edges can be coloured with \\(n\\) colours so that every \\(C_4\\) receives \\(4\\) distinct colours?",
+    "problemPage": "problems/810-rainbow-four-cycles.md",
+    "posterFolder": "posters/810-rainbow-four-cycles",
+    "posterImage": "posters/810-rainbow-four-cycles/poster.png"
+  },
+  {
+    "id": 1142,
+    "slug": "1142-prime-after-powers-of-two",
+    "title": "Prime after powers of two",
+    "display_title": "Prime Shadows of Powers",
+    "status": "Open",
+    "area": [
+      "number theory",
+      "primes"
+    ],
+    "source": "https://www.erdosproblems.com/1142",
+    "statement": "Are there infinitely many \\(n\\), or any \\(n>105\\), such that \\(n-2^k\\) is prime for all \\(1<2^k<n\\)?",
+    "problemPage": "problems/1142-prime-after-powers-of-two.md",
+    "posterFolder": "posters/1142-prime-after-powers-of-two",
+    "posterImage": "posters/1142-prime-after-powers-of-two/poster.png"
+  },
+  {
+    "id": 530,
+    "slug": "530-sidon-subsets",
+    "title": "Sidon subsets",
+    "display_title": "Sidon Subsets",
+    "status": "Open",
+    "area": [
+      "number theory",
+      "Sidon sets"
+    ],
+    "source": "https://www.erdosproblems.com/530",
+    "statement": "Let \\(\\ell(N)\\) be maximal such that in any finite set \\(A\\subset \\mathbb{R}\\) of size \\(N\\) there exists a Sidon subset \\(S\\) of size \\(\\ell(N)\\), i.e. the only solutions to \\(a+b=c+d\\) in \\(S\\) are the trivial ones. Determine the order of \\(\\ell(N)\\). In particular, is it true that \\(\\ell(N)\\sim N^{1/2}\\)?",
+    "problemPage": "problems/530-sidon-subsets.md",
+    "posterFolder": "posters/530-sidon-subsets",
+    "posterImage": "posters/530-sidon-subsets/poster.png"
+  },
+  {
+    "id": 366,
+    "slug": "366-full-neighbours",
+    "title": "Full neighbours",
+    "display_title": "Full Neighbours",
+    "status": "Open",
+    "area": [
+      "number theory",
+      "powerful numbers"
+    ],
+    "source": "https://www.erdosproblems.com/366",
+    "statement": "Are there any \\(2\\)-full \\(n\\) such that \\(n+1\\) is \\(3\\)-full? That is, if \\(p\\mid n\\) then \\(p^2\\mid n\\) and if \\(p\\mid n+1\\) then \\(p^3\\mid n+1\\).",
+    "problemPage": "problems/366-full-neighbours.md",
+    "posterFolder": "posters/366-full-neighbours",
+    "posterImage": "posters/366-full-neighbours/poster.png"
+  },
+  {
+    "id": 234,
+    "slug": "234-normalized-prime-gaps",
+    "title": "Normalized prime gaps",
+    "display_title": "The Distribution of Normalized Prime Gaps",
+    "status": "Open",
+    "area": [
+      "number theory",
+      "primes"
+    ],
+    "source": "https://www.erdosproblems.com/234",
+    "statement": "For every \\(c\\geq 0\\) the density \\(f(c)\\) of integers for which \\(\\frac{p_{n+1}-p_n}{\\log n}< c\\) exists and is a continuous function of \\(c\\).",
+    "problemPage": "problems/234-normalized-prime-gaps.md",
+    "posterFolder": "posters/234-normalized-prime-gaps",
+    "posterImage": "posters/234-normalized-prime-gaps/poster.png"
+  },
+  {
+    "id": 242,
+    "slug": "242-erdos-straus",
+    "title": "Erdős–Straus conjecture",
+    "display_title": "Three Unit Shadows",
+    "status": "Open",
+    "area": [
+      "number theory",
+      "diophantine equations",
+      "egyptian fractions"
+    ],
+    "source": "https://www.erdosproblems.com/latex/242",
+    "statement": "For every \\(n>2\\) there exist distinct integers \\(1\\leq x<y<z\\) such that \\(\\frac{4}{n}=\\frac{1}{x}+\\frac{1}{y}+\\frac{1}{z}\\).",
+    "problemPage": "problems/242-erdos-straus.md",
+    "posterFolder": "posters/242-erdos-straus",
+    "posterImage": "posters/242-erdos-straus/poster.png"
+  },
+  {
+    "id": 1186,
+    "slug": "1186-monochromatic-progressions",
+    "title": "Monochromatic progressions in 2-colourings",
+    "display_title": "Monochromatic Progressions",
+    "status": "Open",
+    "area": [
+      "additive combinatorics",
+      "arithmetic progressions",
+      "Ramsey theory"
+    ],
+    "source": "https://www.erdosproblems.com/1186",
+    "statement": "Let \\(\\delta_k\\) be such that in any \\(2\\)-colouring of \\(\\{1,\\ldots,n\\}\\) there exist at least \\((\\delta_k+o(1))n^2\\) many monochromatic \\(k\\)-term arithmetic progressions. Give reasonable bounds (or even an asymptotic formula) for \\(\\delta_k\\).",
+    "problemPage": "problems/1186-monochromatic-progressions.md",
+    "posterFolder": "posters/1186-monochromatic-progressions",
+    "posterImage": "posters/1186-monochromatic-progressions/poster.png"
+  }
 ]
