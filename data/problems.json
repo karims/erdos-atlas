@@ -1,5 +1,44 @@
 [
   {
+    "id": 968,
+    "slug": "968-prime-index-ratio-increases",
+    "title": "Prime index ratio increases",
+    "display_title": "Rising Prime Ratios",
+    "status": "Open",
+    "area": ["number theory", "primes"],
+    "source": "https://www.erdosproblems.com/forum/thread/968",
+    "statement": "Let \\(u_n=p_n/n\\), where \\(p_n\\) is the \\(n\\)th prime. Does the set of \\(n\\) such that \\(u_n<u_{n+1}\\) have positive density?",
+    "problemPage": "problems/968-prime-index-ratio-increases.md",
+    "posterFolder": "posters/968-prime-index-ratio-increases",
+    "posterImage": "posters/968-prime-index-ratio-increases/poster.png"
+  },
+  {
+    "id": 950,
+    "slug": "950-prime-reciprocal-kernel",
+    "title": "Prime reciprocal kernel",
+    "display_title": "Prime Echoes Near n",
+    "status": "Open",
+    "area": ["number theory", "primes"],
+    "source": "https://www.erdosproblems.com/latex/950",
+    "statement": "Let \\(f(n)=\\sum_{p<n}\\frac{1}{n-p}\\). Is it true that \\(\\liminf f(n)=1\\) and \\(\\limsup f(n)=\\infty\\)? Is it true that \\(f(n)=o(\\log\\log n)\\) for all \\(n\\)?",
+    "problemPage": "problems/950-prime-reciprocal-kernel.md",
+    "posterFolder": "posters/950-prime-reciprocal-kernel",
+    "posterImage": "posters/950-prime-reciprocal-kernel/poster.png"
+  },
+  {
+    "id": 132,
+    "slug": "132-rare-distances",
+    "title": "Rare distances",
+    "display_title": "Rare Distances",
+    "status": "Open",
+    "area": ["distances", "discrete geometry"],
+    "source": "https://www.erdosproblems.com/132",
+    "statement": "Let \\(A\\subset \\mathbb{R}^2\\) be a set of \\(n\\) points. Must there be two distances which occur at least once but between at most \\(n\\) pairs of points? Must the number of such distances \\(\\to\\infty\\) as \\(n\\to\\infty\\)?",
+    "problemPage": "problems/132-rare-distances.md",
+    "posterFolder": "posters/132-rare-distances",
+    "posterImage": "posters/132-rare-distances/poster.png"
+  },
+  {
     "id": 169,
     "slug": "169-progression-free-reciprocal-sums",
     "title": "Progression-free reciprocal sums",
