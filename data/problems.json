@@ -1,5 +1,31 @@
 [
   {
+    "id": 567,
+    "slug": "567-ramsey-size-linear-graphs",
+    "title": "Ramsey size linear graphs",
+    "display_title": "Ramsey Size Linear?",
+    "status": "Open",
+    "area": ["graph theory", "Ramsey theory"],
+    "source": "https://www.erdosproblems.com/567",
+    "statement": "Let \\(G\\) be either \\(Q_3\\) or \\(K_{3,3}\\) or \\(H_5\\), the last formed by adding two vertex-disjoint chords to \\(C_5\\). Is it true that, if \\(H\\) has \\(m\\) edges and no isolated vertices, then \\(R(G,H)\\ll m\\)?",
+    "problemPage": "problems/567-ramsey-size-linear-graphs.md",
+    "posterFolder": "posters/567-ramsey-size-linear-graphs",
+    "posterImage": "posters/567-ramsey-size-linear-graphs/poster.png"
+  },
+  {
+    "id": 122,
+    "slug": "122-shifted-arithmetic-functions",
+    "title": "Shifted arithmetic functions",
+    "display_title": "Crowded Shifts",
+    "status": "Open",
+    "area": ["number theory", "arithmetic functions"],
+    "source": "https://www.erdosproblems.com/122",
+    "statement": "For which number theoretic functions \\(f\\) is it true that, for any \\(F(n)\\) such that \\(F(n)/f(n)\\to 0\\) for almost all \\(n\\), there are infinitely many \\(x\\) such that \\(\\frac{\\#\\{n\\in\\mathbb{N}:n+f(n)\\in(x,x+F(x))\\}}{F(x)}\\to\\infty\\)?",
+    "problemPage": "problems/122-shifted-arithmetic-functions.md",
+    "posterFolder": "posters/122-shifted-arithmetic-functions",
+    "posterImage": "posters/122-shifted-arithmetic-functions/poster.png"
+  },
+  {
     "id": 968,
     "slug": "968-prime-index-ratio-increases",
     "title": "Prime index ratio increases",
