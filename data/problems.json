@@ -1,5 +1,44 @@
 [
   {
+    "id": 509,
+    "slug": "509-polynomial-lemniscate-covering",
+    "title": "Polynomial lemniscate covering",
+    "display_title": "Covering Polynomial Shadows",
+    "status": "Open",
+    "area": ["analysis", "polynomials"],
+    "source": "https://www.erdosproblems.com/509",
+    "statement": "Let \\(f(z)\\in\\mathbb{C}[z]\\) be a monic non-constant polynomial. Can the set \\(\\{z\\in\\mathbb{C}:|f(z)|\\leq 1\\}\\) be covered by a set of circles the sum of whose radii is \\(\\leq 2\\)?",
+    "problemPage": "problems/509-polynomial-lemniscate-covering.md",
+    "posterFolder": "posters/509-polynomial-lemniscate-covering",
+    "posterImage": "posters/509-polynomial-lemniscate-covering/poster.png"
+  },
+  {
+    "id": 1168,
+    "slug": "1168-partition-relation-without-gch",
+    "title": "A partition relation without GCH",
+    "display_title": "A Broken Infinite Arrow",
+    "status": "Open",
+    "area": ["set theory", "Ramsey theory"],
+    "source": "https://www.erdosproblems.com/1168",
+    "statement": "Prove that \\(\\aleph_{\\omega+1}\\not\\to(\\aleph_{\\omega+1},3,\\ldots,3)^2_{\\aleph_0}\\) without assuming the generalised continuum hypothesis.",
+    "problemPage": "problems/1168-partition-relation-without-gch.md",
+    "posterFolder": "posters/1168-partition-relation-without-gch",
+    "posterImage": "posters/1168-partition-relation-without-gch/poster.png"
+  },
+  {
+    "id": 126,
+    "slug": "126-prime-factors-of-pair-sums",
+    "title": "Prime factors of pair-sums",
+    "display_title": "Prime Shadows of Pair-Sums",
+    "status": "Open",
+    "area": ["number theory", "prime factors"],
+    "source": "https://www.erdosproblems.com/126",
+    "statement": "Let \\(f(n)\\) be maximal such that if \\(A\\subseteq\\mathbb{N}\\) has \\(|A|=n\\), then \\(\\prod_{a\\neq b\\in A}(a+b)\\) has at least \\(f(n)\\) distinct prime factors. Is it true that \\(f(n)/\\log n\\to\\infty\\)?",
+    "problemPage": "problems/126-prime-factors-of-pair-sums.md",
+    "posterFolder": "posters/126-prime-factors-of-pair-sums",
+    "posterImage": "posters/126-prime-factors-of-pair-sums/poster.png"
+  },
+  {
     "id": 96,
     "slug": "96-unit-distances-in-convex-polygons",
     "title": "Unit distances in convex polygons",
