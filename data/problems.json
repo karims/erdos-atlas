@@ -1,5 +1,31 @@
 [
   {
+    "id": 114,
+    "slug": "114-polynomial-level-curve-length",
+    "title": "Polynomial level-curve length",
+    "display_title": "The Longest Polynomial Curve",
+    "status": "Open",
+    "area": ["analysis", "polynomials"],
+    "source": "https://www.erdosproblems.com/114",
+    "statement": "If \\(p(z)\\in\\mathbb{C}[z]\\) is a monic polynomial of degree \\(n\\), then is the length of the curve \\(\\{z\\in\\mathbb{C}:|p(z)|=1\\}\\) maximised when \\(p(z)=z^n-1\\)?",
+    "problemPage": "problems/114-polynomial-level-curve-length.md",
+    "posterFolder": "posters/114-polynomial-level-curve-length",
+    "posterImage": "posters/114-polynomial-level-curve-length/poster.png"
+  },
+  {
+    "id": 97,
+    "slug": "97-equidistant-vertices-in-convex-polygons",
+    "title": "Equidistant vertices in convex polygons",
+    "display_title": "Four at the Same Distance?",
+    "status": "Open",
+    "area": ["geometry", "distances", "convex"],
+    "source": "https://www.erdosproblems.com/97",
+    "statement": "Does every convex polygon have a vertex with no other \\(4\\) vertices equidistant from it?",
+    "problemPage": "problems/97-equidistant-vertices-in-convex-polygons.md",
+    "posterFolder": "posters/97-equidistant-vertices-in-convex-polygons",
+    "posterImage": "posters/97-equidistant-vertices-in-convex-polygons/poster.png"
+  },
+  {
     "id": 509,
     "slug": "509-polynomial-lemniscate-covering",
     "title": "Polynomial lemniscate covering",
